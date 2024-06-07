@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8810CB862C0C85BF001B7200 /* OTUS_courseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810CB852C0C85BF001B7200 /* OTUS_courseApp.swift */; };
-		8810CB882C0C85BF001B7200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810CB872C0C85BF001B7200 /* ContentView.swift */; };
+		8810CB882C0C85BF001B7200 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810CB872C0C85BF001B7200 /* MainTabView.swift */; };
 		8810CB8A2C0C85C2001B7200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8810CB892C0C85C2001B7200 /* Assets.xcassets */; };
 		8810CB8D2C0C85C2001B7200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8810CB8C2C0C85C2001B7200 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		8810CB822C0C85BE001B7200 /* OTUS_course.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS_course.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8810CB852C0C85BF001B7200 /* OTUS_courseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUS_courseApp.swift; sourceTree = "<group>"; };
-		8810CB872C0C85BF001B7200 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8810CB872C0C85BF001B7200 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8810CB892C0C85C2001B7200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8810CB8C2C0C85C2001B7200 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				8810CB852C0C85BF001B7200 /* OTUS_courseApp.swift */,
-				8810CB872C0C85BF001B7200 /* ContentView.swift */,
+				8810CB872C0C85BF001B7200 /* MainTabView.swift */,
 				8810CB892C0C85C2001B7200 /* Assets.xcassets */,
 				8810CB8B2C0C85C2001B7200 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8810CB882C0C85BF001B7200 /* ContentView.swift in Sources */,
+				8810CB882C0C85BF001B7200 /* MainTabView.swift in Sources */,
 				8810CB862C0C85BF001B7200 /* OTUS_courseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
