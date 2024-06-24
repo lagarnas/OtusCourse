@@ -11,6 +11,12 @@
 		8810CB882C0C85BF001B7200 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810CB872C0C85BF001B7200 /* MainTabView.swift */; };
 		8810CB8A2C0C85C2001B7200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8810CB892C0C85C2001B7200 /* Assets.xcassets */; };
 		8810CB8D2C0C85C2001B7200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8810CB8C2C0C85C2001B7200 /* Preview Assets.xcassets */; };
+		884BBBC72C29851E00651F98 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBBC62C29851E00651F98 /* HomeScreen.swift */; };
+		884BBBC92C29865500651F98 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBBC82C29865500651F98 /* MenuScreen.swift */; };
+		884BBBCB2C29869A00651F98 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBBCA2C29869A00651F98 /* ProfileScreen.swift */; };
+		884BBBCE2C29877700651F98 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBBCD2C29877700651F98 /* AppButtonStyle.swift */; };
+		884BBBD02C2987B500651F98 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBBCF2C2987B500651F98 /* ActivityIndicator.swift */; };
+		884BBBD32C29880400651F98 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBBD22C29880400651F98 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		8810CB872C0C85BF001B7200 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8810CB892C0C85C2001B7200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8810CB8C2C0C85C2001B7200 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		884BBBC62C29851E00651F98 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		884BBBC82C29865500651F98 /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		884BBBCA2C29869A00651F98 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		884BBBCD2C29877700651F98 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
+		884BBBCF2C2987B500651F98 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		884BBBD22C29880400651F98 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				8810CB852C0C85BF001B7200 /* OTUS_courseApp.swift */,
-				8810CB872C0C85BF001B7200 /* MainTabView.swift */,
+				884BBBD12C2987E300651F98 /* Models */,
+				884BBBC52C29850200651F98 /* Views */,
 				8810CB892C0C85C2001B7200 /* Assets.xcassets */,
 				8810CB8B2C0C85C2001B7200 /* Preview Content */,
 			);
@@ -65,6 +78,35 @@
 				8810CB8C2C0C85C2001B7200 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		884BBBC52C29850200651F98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				884BBBCC2C29875000651F98 /* ViewModifiers */,
+				8810CB872C0C85BF001B7200 /* MainTabView.swift */,
+				884BBBC62C29851E00651F98 /* HomeScreen.swift */,
+				884BBBC82C29865500651F98 /* MenuScreen.swift */,
+				884BBBCA2C29869A00651F98 /* ProfileScreen.swift */,
+				884BBBCF2C2987B500651F98 /* ActivityIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		884BBBCC2C29875000651F98 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				884BBBCD2C29877700651F98 /* AppButtonStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		884BBBD12C2987E300651F98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				884BBBD22C29880400651F98 /* MenuItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884BBBC92C29865500651F98 /* MenuScreen.swift in Sources */,
 				8810CB882C0C85BF001B7200 /* MainTabView.swift in Sources */,
 				8810CB862C0C85BF001B7200 /* OTUS_courseApp.swift in Sources */,
+				884BBBCE2C29877700651F98 /* AppButtonStyle.swift in Sources */,
+				884BBBD02C2987B500651F98 /* ActivityIndicator.swift in Sources */,
+				884BBBD32C29880400651F98 /* MenuItem.swift in Sources */,
+				884BBBC72C29851E00651F98 /* HomeScreen.swift in Sources */,
+				884BBBCB2C29869A00651F98 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
