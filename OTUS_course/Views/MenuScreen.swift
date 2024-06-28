@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// * Сделать глубину в 3 экрана с помощью навигейшен-стека
+
 struct MenuScreen: View {
     
     @State private var menuItems: [MenuItem] = .init()
@@ -15,10 +17,12 @@ struct MenuScreen: View {
         NavigationStack {
             List(menuItems) { item in
                 NavigationLink(item.name) {
-                    Text("Grilled Fingerlings")
-                    Text("Asian Pear Salad")
-                    Text("Roasted Acorn Squash")
-                    Text("Smothered Chicken")
+                    List {
+                        NavigationLink("Grilled Fingerlings", destination: Text("Grilled Fingerlings"))
+                        NavigationLink("Asian Pear Salad", destination: Text("Asian Pear Salad"))
+                        NavigationLink("Roasted Acorn Squash", destination: Text("Roasted Acorn Squash"))
+                        NavigationLink("Smothered Chicken", destination: Text("Smothered Chicken"))
+                    }
                 }
             }.task {
                 self.menuItems = await MenuItem.all
