@@ -97,7 +97,7 @@
 			children = (
 				884BBBD82C29B9DF00651F98 /* NewsApiNetwork */,
 				8810CB852C0C85BF001B7200 /* OTUS_courseApp.swift */,
-				884BBC3B2C3800E000651F98 /* Service */,
+				884BBC442C3DA71700651F98 /* Core */,
 				884BBBD12C2987E300651F98 /* Models */,
 				884BBBC52C29850200651F98 /* Views */,
 				8810CB892C0C85C2001B7200 /* Assets.xcassets */,
@@ -176,6 +176,14 @@
 				884BBC402C38015300651F98 /* Configurator.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		884BBC442C3DA71700651F98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				884BBC3B2C3800E000651F98 /* Service */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
