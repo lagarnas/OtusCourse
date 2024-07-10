@@ -8,21 +8,13 @@
 import SwiftUI
 import NewsApiNetwork
 
-// 1. Используйте открытое API https://github.com/public-apis/public-apis
-// 3. При переключении рубрик должен изменять содержимое List, пейджинг должен работать
-
-private enum Constants {
-    static let date: String = "2024-06-01"
-    static let sortBy: String = "publishedAt"
-    static let language: String = "en"
-    static let apiKey: String = "8e7caac0fb8c4c2ba9f3324db7ed392d"
-}
-
 extension Article: Identifiable {
     public var id: String { url }
 }
 
-class News: ObservableObject {
+final class News: ObservableObject {
+    // 3. Добавить инжектинг в переменные инстанса класса, чтобы в каждом классе можно было видеть зависимости, не скролля файл
+    @Injected var service: NetworkService?
     
     @Published var appleArticles = [Article]()
     @Published var teslaArticles = [Article]()
@@ -30,21 +22,23 @@ class News: ObservableObject {
     private var applePage = 1
     private var teslaPage = 1
     private var totalPage = 1000
+    
+    init() {
+        Configurator.shared.setup()
+        service = Configurator.shared.serviceLocator.getService(type: NetworkService.self)
+    }
 
     func loadAppleNews() {
         guard applePage <= totalPage else { return }
         guard canLoad else { return }
         
         canLoad = false
-        ArticlesAPI.everythingGet(q: "WWDC",
-                                  from: Constants.date,
-                                  sortBy: Constants.sortBy,
-                                  language: Constants.language,
-                                  apiKey: Constants.apiKey,
-                                  page: applePage) { data, error in
+        
+        service?.loadAppleNews(page: applePage) { data, error in
             self.totalPage = data?.totalResults ?? 1000
             self.appleArticles.append(contentsOf: data?.articles ?? [])
         }
+        
         applePage += 1
         canLoad = true
     }
@@ -53,12 +47,8 @@ class News: ObservableObject {
         guard teslaPage <= totalPage else { return }
         guard canLoad else { return }
         canLoad = false
-        ArticlesAPI.everythingGet(q: "tesla",
-                                  from: Constants.date,
-                                  sortBy: Constants.sortBy,
-                                  language: Constants.language,
-                                  apiKey: Constants.apiKey,
-                                  page: teslaPage) { data, error in
+        
+        service?.loadTeslaNews(page: teslaPage) { data, error in
             self.totalPage = data?.totalResults ?? 1000
             self.teslaArticles.append(contentsOf: data?.articles ?? [])
         }

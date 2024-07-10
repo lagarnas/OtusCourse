@@ -8,8 +8,6 @@
 import SwiftUI
 import NewsApiNetwork
 
-// 2. Сделайте несколько рубрик по разным запросам новостей или городов по погоде (переключение через горизонтальный ScrollView либо SegmentedControl)
-
 struct NewsScreen: View {
     
     @StateObject var news = News()

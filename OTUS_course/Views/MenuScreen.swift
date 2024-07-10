@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// * Сделать глубину в 3 экрана с помощью навигейшен-стека
-
 struct MenuScreen: View {
     
     @State private var menuItems: [MenuItem] = .init()

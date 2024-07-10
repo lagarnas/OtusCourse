@@ -27,6 +27,10 @@
 		884BBC342C2D7F5F00651F98 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC332C2D7F5F00651F98 /* CustomNavView.swift */; };
 		884BBC362C2D83B100651F98 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC352C2D83B100651F98 /* CustomNavLink.swift */; };
 		884BBC382C2D8A1B00651F98 /* CustomNavBarPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC372C2D8A1A00651F98 /* CustomNavBarPreferenceKeys.swift */; };
+		884BBC3A2C37F9F300651F98 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC392C37F9F300651F98 /* NetworkService.swift */; };
+		884BBC3D2C38010700651F98 /* InjectedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC3C2C38010700651F98 /* InjectedWrapper.swift */; };
+		884BBC3F2C38013C00651F98 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC3E2C38013C00651F98 /* ServiceLocator.swift */; };
+		884BBC412C38015300651F98 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884BBC402C38015300651F98 /* Configurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		884BBC332C2D7F5F00651F98 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		884BBC352C2D83B100651F98 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
 		884BBC372C2D8A1A00651F98 /* CustomNavBarPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferenceKeys.swift; sourceTree = "<group>"; };
+		884BBC392C37F9F300651F98 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		884BBC3C2C38010700651F98 /* InjectedWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedWrapper.swift; sourceTree = "<group>"; };
+		884BBC3E2C38013C00651F98 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		884BBC402C38015300651F98 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 			children = (
 				884BBBD82C29B9DF00651F98 /* NewsApiNetwork */,
 				8810CB852C0C85BF001B7200 /* OTUS_courseApp.swift */,
+				884BBC3B2C3800E000651F98 /* Service */,
 				884BBBD12C2987E300651F98 /* Models */,
 				884BBBC52C29850200651F98 /* Views */,
 				8810CB892C0C85C2001B7200 /* Assets.xcassets */,
@@ -156,6 +165,17 @@
 				884BBC372C2D8A1A00651F98 /* CustomNavBarPreferenceKeys.swift */,
 			);
 			path = CustomNavBar;
+			sourceTree = "<group>";
+		};
+		884BBC3B2C3800E000651F98 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				884BBC392C37F9F300651F98 /* NetworkService.swift */,
+				884BBC3C2C38010700651F98 /* InjectedWrapper.swift */,
+				884BBC3E2C38013C00651F98 /* ServiceLocator.swift */,
+				884BBC402C38015300651F98 /* Configurator.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +255,8 @@
 				8810CB882C0C85BF001B7200 /* MainTabView.swift in Sources */,
 				884BBC342C2D7F5F00651F98 /* CustomNavView.swift in Sources */,
 				884BBBD72C29B7FA00651F98 /* NewsScreen.swift in Sources */,
+				884BBC412C38015300651F98 /* Configurator.swift in Sources */,
+				884BBC3A2C37F9F300651F98 /* NetworkService.swift in Sources */,
 				884BBC382C2D8A1B00651F98 /* CustomNavBarPreferenceKeys.swift in Sources */,
 				8810CB862C0C85BF001B7200 /* OTUS_courseApp.swift in Sources */,
 				884BBBCE2C29877700651F98 /* AppButtonStyle.swift in Sources */,
@@ -246,7 +268,9 @@
 				884BBC2E2C2D5F7900651F98 /* AppNavBarView.swift in Sources */,
 				884BBC362C2D83B100651F98 /* CustomNavLink.swift in Sources */,
 				884BBC272C2AE7BD00651F98 /* News.swift in Sources */,
+				884BBC3F2C38013C00651F98 /* ServiceLocator.swift in Sources */,
 				884BBBCB2C29869A00651F98 /* ProfileScreen.swift in Sources */,
+				884BBC3D2C38010700651F98 /* InjectedWrapper.swift in Sources */,
 				884BBC292C2AE85A00651F98 /* ListArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
